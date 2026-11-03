@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b2d">
+<title>Private Wealth OS</title>
+<style>
+:root{--bg:#f4f6fa;--panel:#fff;--ink:#17243a;--muted:#778398;--line:#e8edf4;--nav:#101b2d;--nav2:#1b2a42;--gold:#c99b4b;--green:#16866b;--red:#c45d62;--blue:#5579bd;--shadow:0 12px 35px rgba(22,39,65,.06)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+button,input,select{font:inherit}button{cursor:pointer}.shell{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.sidebar{background:var(--nav);color:#dce4f1;padding:26px 18px;display:flex;flex-direction:column;gap:28px}.brand{display:flex;align-items:center;gap:12px;padding:0 10px}.mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(145deg,#e1bd78,#a87b35);display:grid;place-items:center;color:#17243a;font-weight:900}.brand strong{font-size:15px;letter-spacing:.3px}.brand small{display:block;color:#91a0b6;font-size:11px;margin-top:2px}.nav-label{font-size:10px;letter-spacing:1.5px;color:#718199;padding:0 12px;margin-bottom:8px}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:#aebbd0;text-align:left;padding:11px 12px;border-radius:10px;display:flex;gap:12px;align-items:center}.nav button.active,.nav button:hover{background:var(--nav2);color:#fff}.nav .ico{width:20px;text-align:center;color:#d0ae70}.side-bottom{margin-top:auto;border-top:1px solid #29374c;padding:18px 10px 0;color:#8f9db1;font-size:11px}.secure{display:flex;align-items:center;gap:8px;color:#b9d8cc;margin-bottom:8px}.main{min-width:0}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 34px}.crumb{color:var(--muted);font-size:12px}.crumb b{color:var(--ink);font-weight:650}.top-actions{display:flex;align-items:center;gap:12px}.pill{padding:7px 11px;border:1px solid var(--line);border-radius:20px;color:#64738a;font-size:11px}.avatar{width:34px;height:34px;border-radius:50%;background:#e8edf6;display:grid;place-items:center;font-weight:700;color:#425675}.content{max-width:1500px;margin:auto;padding:30px 34px 50px}.welcome{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:24px}.eyebrow{color:var(--gold);font-weight:700;font-size:10px;letter-spacing:1.8px;text-transform:uppercase}.welcome h1{font-size:27px;letter-spacing:-.7px;margin:5px 0}.welcome p{color:var(--muted);margin:0}.btn{border:0;border-radius:9px;padding:10px 15px;font-weight:650}.primary{background:var(--nav);color:white}.secondary{background:#f0f3f8;color:#34445e;border:1px solid var(--line)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.metric{padding:18px 19px}.metric-head{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.metric-icon{width:30px;height:30px;border-radius:9px;background:#f5f0e7;color:#9c7436;display:grid;place-items:center}.metric-value{font-size:25px;font-weight:750;letter-spacing:-.6px;margin:13px 0 3px}.metric-foot{font-size:11px;color:var(--muted)}.positive{color:var(--green)}.negative{color:var(--red)}.grid-main{display:grid;grid-template-columns:1.55fr 1fr;gap:16px;margin-top:17px}.panel{padding:20px}.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.panel h2{font-size:14px;margin:0}.sub{color:var(--muted);font-size:11px;margin-top:3px}.select{border:1px solid var(--line);border-radius:8px;padding:7px 10px;color:#596981;background:#fff;font-size:11px}.chart{height:210px;position:relative;border-bottom:1px solid var(--line);background:repeating-linear-gradient(to bottom,transparent 0,transparent 51px,#eef1f6 52px)}.chart svg{width:100%;height:100%;overflow:visible}.axis{display:flex;justify-content:space-between;color:#98a3b4;font-size:10px;padding-top:9px}.alloc-row{display:grid;grid-template-columns:90px 1fr 65px;gap:10px;align-items:center;margin:17px 0;font-size:11px}.bar{height:7px;background:#edf0f5;border-radius:10px;overflow:hidden}.bar span{display:block;height:100%;border-radius:10px;background:var(--blue)}.alloc-row b{text-align:right;font-size:11px}.bottom-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-top:16px}.table{width:100%;border-collapse:collapse;font-size:11px}.table th{text-align:left;color:#8b97a9;font-weight:600;padding:10px 8px;border-bottom:1px solid var(--line)}.table td{padding:12px 8px;border-bottom:1px solid #f0f2f6}.table tr:last-child td{border:0}.tag{padding:4px 7px;border-radius:6px;background:#edf6f2;color:#278267;font-size:10px}.tag.warn{background:#fff5e8;color:#a8782f}.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quick button{padding:13px;text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;color:var(--ink)}.quick button:hover{border-color:#c8a66d;background:#fdfbf7}.quick strong{display:block;font-size:11px;margin-top:7px}.quick small{color:var(--muted);font-size:10px}.notice{margin-top:17px;padding:12px 15px;border-radius:10px;background:#fff9ed;border:1px solid #f1e4c9;color:#80683e;font-size:11px}
+.modal-backdrop{position:fixed;inset:0;background:#0b1526a8;display:none;align-items:center;justify-content:center;padding:20px;z-index:5}.modal-backdrop.show{display:flex}.modal{width:min(440px,100%);background:white;border-radius:16px;padding:22px;box-shadow:0 25px 70px #0004}.modal h2{margin:0 0 5px;font-size:18px}.modal p{margin:0 0 18px;color:var(--muted);font-size:12px}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:11px;color:#65738a}.field input,.field select{padding:10px;border:1px solid var(--line);border-radius:8px;width:100%;background:white}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
+@media(max-width:1050px){.cards{grid-template-columns:repeat(2,1fr)}.grid-main,.bottom-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.shell{grid-template-columns:1fr}.sidebar{padding:12px;gap:10px}.brand{padding:4px}.nav-label,.side-bottom{display:none}.nav{display:flex;overflow:auto}.nav button{white-space:nowrap;padding:9px}.topbar{height:58px;padding:0 16px}.content{padding:22px 15px}.welcome{align-items:flex-start;gap:15px;flex-direction:column}.cards{gap:9px}.metric{padding:13px}.metric-value{font-size:20px}.panel{padding:15px}.grid-main{gap:10px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar">
+  <div class="brand"><div class="mark">W</div><div><strong>WEALTH OS</strong><small>PRIVATE FAMILY FINANCE</small></div></div>
+  <div><div class="nav-label">WORKSPACE</div><nav class="nav" id="nav">
+    <button class="active" data-page="Overview"><span class="ico">◫</span>Overview</button>
+    <button data-page="Transactions"><span class="ico">⇄</span>Transactions</button>
+    <button data-page="Accounts"><span class="ico">▤</span>Accounts</button>
+    <button data-page="Investments"><span class="ico">◈</span>Investments</button>
+    <button data-page="Liabilities"><span class="ico">▱</span>Liabilities</button>
+    <button data-page="Insurance"><span class="ico">◇</span>Insurance</button>
+    <button data-page="Reports"><span class="ico">▥</span>Reports</button>
+  </nav></div>
+  <div><div class="nav-label">SYSTEM</div><nav class="nav"><button data-page="Backup & Security"><span class="ico">⌑</span>Backup & Security</button><button data-page="Settings"><span class="ico">⚙</span>Settings</button></nav></div>
+  <div class="side-bottom"><div class="secure">● Local-first workspace</div>Designed for private family finances<br>Build 0.1 · Demo interface</div>
+</aside>
+<main class="main">
+  <header class="topbar"><div class="crumb">Workspace&nbsp; / &nbsp;<b id="currentPage">Overview</b></div><div class="top-actions"><span class="pill">INDIA · INR ₹</span><span class="pill">Offline UI preview</span><div class="avatar">F</div></div></header>
+  <div class="content">
+    <section class="welcome"><div><div class="eyebrow">Family wealth overview</div><h1>Good evening.</h1><p>Your complete financial picture, in one private workspace.</p></div><button class="btn primary" id="addBtn">＋ Add transaction</button></section>
+    <section class="cards">
+      <article class="card metric"><div class="metric-head"><span>Total net worth</span><span class="metric-icon">◈</span></div><div class="metric-value">₹ 0.00</div><div class="metric-foot">Add assets and liabilities to calculate</div></article>
+      <article class="card metric"><div class="metric-head"><span>Total assets</span><span class="metric-icon">↗</span></div><div class="metric-value">₹ 0.00</div><div class="metric-foot">Across all family members</div></article>
+      <article class="card metric"><div class="metric-head"><span>Total liabilities</span><span class="metric-icon">↘</span></div><div class="metric-value">₹ 0.00</div><div class="metric-foot">Loans and card balances</div></article>
+      <article class="card metric"><div class="metric-head"><span>Monthly cash flow</span><span class="metric-icon">⌁</span></div><div class="metric-value">₹ 0.00</div><div class="metric-foot">Income less expenses</div></article>
+    </section>
+    <section class="grid-main">
+      <article class="panel"><div class="panel-head"><div><h2>Net worth trend</h2><div class="sub">Track your wealth over time</div></div><select class="select"><option>Last 6 months</option><option>Last 12 months</option></select></div>
+        <div class="chart"><svg viewBox="0 0 650 210" preserveAspectRatio="none"><path d="M0 175 C55 170 70 145 120 150 S190 120 230 132 S300 90 350 110 S420 65 465 80 S540 45 580 55 S620 25 650 30" fill="none" stroke="#c99b4b" stroke-width="3" stroke-linecap="round"/><path d="M0 175 C55 170 70 145 120 150 S190 120 230 132 S300 90 350 110 S420 65 465 80 S540 45 580 55 S620 25 650 30 L650 210 L0 210Z" fill="#c99b4b" opacity=".09"/></svg></div><div class="axis"><span>JUN</span><span>JUL</span><span>AUG</span><span>SEP</span><span>OCT</span><span>NOV</span></div></article>
+      <article class="panel"><div class="panel-head"><div><h2>Asset allocation</h2><div class="sub">By investment category</div></div><span class="sub">No holdings yet</span></div>
+        <div class="alloc-row"><span>Fixed deposits</span><div class="bar"><span style="width:0%"></span></div><b>—</b></div>
+        <div class="alloc-row"><span>Stocks</span><div class="bar"><span style="width:0%;background:#6389c7"></span></div><b>—</b></div>
+        <div class="alloc-row"><span>Mutual funds</span><div class="bar"><span style="width:0%;background:#70a993"></span></div><b>—</b></div>
+        <div class="alloc-row"><span>Gold</span><div class="bar"><span style="width:0%;background:#d4ad61"></span></div><b>—</b></div>
+        <div class="alloc-row"><span>Retirement</span><div class="bar"><span style="width:0%;background:#9b83bd"></span></div><b>—</b></div>
+      </article>
+    </section>
+    <section class="bottom-grid">
+      <article class="panel"><div class="panel-head"><div><h2>Recent transactions</h2><div class="sub">Your latest income and expenses</div></div><button class="btn secondary" id="viewTx">View all</button></div>
+        <table class="table"><thead><tr><th>DESCRIPTION</th><th>ACCOUNT</th><th>DATE</th><th>AMOUNT</th></tr></thead><tbody id="txRows"><tr><td colspan="4" style="text-align:center;color:#96a1b1;padding:25px">No transactions added yet</td></tr></tbody></table>
+      </article>
+      <article class="panel"><div class="panel-head"><div><h2>Quick actions</h2><div class="sub">Manage your financial records</div></div></div><div class="quick">
+        <button data-action="transaction"><span>＋</span><strong>Add transaction</strong><small>Income or expense</small></button>
+        <button data-action="asset"><span>◈</span><strong>Add an asset</strong><small>FD, stock, MF, gold…</small></button>
+        <button data-action="liability"><span>▱</span><strong>Record liability</strong><small>Loan or credit card</small></button>
+        <button data-action="backup"><span>⌑</span><strong>Backup vault</strong><small>Encrypted backup workflow</small></button>
+      </div></article>
+    </section>
+    <div class="notice"><b>Prototype notice:</b> This page is a visual front-end starter. It does not yet save records, encrypt data, authenticate family members, or create backups. Do not enter real financial or personal information here. Connect it to the encrypted local vault before real use.</div>
+  </div>
+</main>
+</div>
+<div class="modal-backdrop" id="modal"><form class="modal" id="txForm"><h2>Add transaction</h2><p>Manual entry · demo only · data is not saved</p>
+  <div class="field"><label for="desc">Description</label><input id="desc" required placeholder="e.g. Monthly salary"></div>
+  <div class="field"><label for="kind">Type</label><select id="kind"><option>Income</option><option>Expense</option></select></div>
+  <div class="field"><label for="amount">Amount (₹)</label><input id="amount" type="number" min="1" step=".01" required placeholder="0.00"></div>
+  <div class="field"><label for="account">Account</label><input id="account" placeholder="e.g. Main bank account"></div>
+  <div class="modal-actions"><button type="button" class="btn secondary" id="cancel">Cancel</button><button class="btn primary" type="submit">Preview entry</button></div>
+</form></div>
+<script>
+const modal=document.getElementById('modal'), form=document.getElementById('txForm');
+function openModal(){modal.classList.add('show');document.getElementById('desc').focus()}
+document.getElementById('addBtn').onclick=openModal;
+document.getElementById('cancel').onclick=()=>modal.classList.remove('show');
+document.getElementById('viewTx').onclick=()=>setPage('Transactions');
+document.querySelectorAll('[data-action="transaction"]').forEach(b=>b.onclick=openModal);
+document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.action!=='transaction')alert('This section is a UI placeholder. Connect it to the encrypted local vault before use.');}));
+function setPage(page){document.getElementById('currentPage').textContent=page;document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));if(page!=='Overview')alert(page+' section is a UI placeholder in this starter file.');}
+document.querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>setPage(b.dataset.page));
+form.addEventListener('submit',e=>{e.preventDefault();const d=document.getElementById('desc').value;const a=Number(document.getElementById('amount').value);const k=document.getElementById('kind').value;alert(`${k} preview: ${d} — ₹${a.toLocaleString('en-IN')}. Nothing has been saved.`);modal.classList.remove('show');form.reset();});
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});
+</script>
+</body>
+</html>
